@@ -1,0 +1,22 @@
+[Unit]
+Description=SuperMasterNode's distributed currency daemon
+After=network.target
+
+[Service]
+User=smn
+Group=smn
+
+Type=forking
+PIDFile=/var/lib/smnd/smnd.pid
+ExecStart=/usr/bin/smnd -daemon -pid=/var/lib/smnd/smnd.pid \
+-conf=/etc/smn/smn.conf -datadir=/var/lib/smnd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

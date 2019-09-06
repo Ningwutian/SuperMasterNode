@@ -1,0 +1,6 @@
+usr/local/bin/smn-qt usr/bin
+share/pixmaps/smn32.xpm usr/share/pixmaps
+share/pixmaps/smn16.xpm usr/share/pixmaps
+share/pixmaps/smn128.png usr/share/pixmaps
+debian/smn-qt.desktop usr/share/applications
+debian/smn-qt.protocol usr/share/kde4/services/

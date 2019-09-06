@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SuperMasterNode
+Comment=SuperMasterNode P2P Cryptocurrency
+Comment[fr]=SuperMasterNode, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=SuperMasterNode, eşten eşe kriptografik sanal para birimi
+Exec=smn-qt %u
+Terminal=false
+Type=Application
+Icon=smn128
+MimeType=x-scheme-handler/smn;
+Categories=Office;Finance;
